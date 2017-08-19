@@ -13,5 +13,3 @@ def smallest_divisible
 end
 
 smallest_divisible
-
-# I really need to refactor this!! It takes far too long.
