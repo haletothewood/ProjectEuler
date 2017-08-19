@@ -1,3 +1,5 @@
+require 'time'
+@time = Time.now
 
 def palindrome
 	a = b = 999
@@ -18,3 +20,12 @@ def palindrome
 end
 
 puts palindrome
+
+@timeb = Time.now
+
+def timeDifference
+	tm = @timeb - @time
+	puts "This calculation took #{tm} seconds."
+end
+
+timeDifference
