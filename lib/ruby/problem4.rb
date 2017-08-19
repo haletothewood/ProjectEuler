@@ -1,7 +1,6 @@
-require 'time'
-@time = Time.now
-
 def palindrome
+	require 'time'
+	@time = Time.now
 	a = b = 999
 	pal = []
 	a.downto 0 do |c|
@@ -16,16 +15,10 @@ def palindrome
 				end
 	    	end
 	end
-	pal.max
-end
-
-puts palindrome
-
-@timeb = Time.now
-
-def timeDifference
+	puts pal.max
+	@timeb = Time.now
 	tm = @timeb - @time
 	puts "This calculation took #{tm} seconds."
 end
 
-timeDifference
+palindrome
