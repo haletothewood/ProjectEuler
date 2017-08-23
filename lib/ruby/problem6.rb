@@ -16,8 +16,6 @@ def square_of_sum(limit)
 	x
 end
 	
-
-
 def difference(limit)
 	diff = square_of_sum(limit) - sum_of_squares(limit)
 	diff
