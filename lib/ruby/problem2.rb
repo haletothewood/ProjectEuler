@@ -20,4 +20,5 @@ end
 
 numbers
 
+# (0..4000000).take_while{|i| (0..i).reduce([1,0]){|(a,b), _| [b, a+b]}[0] <= 4000000 }.map{|i| (0..i).reduce([1,0]){|(a,b), _| [b, a+b]}[0] }.select{|i| i%2 == 0}.reduce(:+)
 
